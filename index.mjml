@@ -5,6 +5,9 @@
 
 <mjml>
   <mj-head>
+    <mj-raw>
+      <!-- Global Styling -->
+    </mj-raw>
     <mj-style>
       * {
         box-sizing: border-box;
@@ -31,8 +34,37 @@
         color: #008060;
         text-decoration: underline;
       }
+
+      .footer-links {
+        color: #000;
+        text-decoration: none;
+      }
+
+      .footer-links:hover {
+        text-decoration: underline;
+        color: #004c3f;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .footer-links {
+          color: red;
+          text-decoration: none;
+        }
+
+        .footer-links:hover {
+          text-decoration: underline;
+          color: blue;
+        }
+      }
     </mj-style>
+    <mj-raw>
+      <!-- Inline Styling -->
+    </mj-raw>
     <mj-style inline="inline">
+      .content-background {
+        background-color: #fff;
+      }
+
       .header {
         background-color: #004c3f;
       }
@@ -41,15 +73,27 @@
         padding-left: 30px;
         padding-right: 30px;
       }
+
+      .icons-size {
+        max-width: 280px;
+        padding: 40px 0 20px;
+      }
+
+      .footer {
+        background-image: url('http://127.0.0.1:5500/assets/bg-colors.png');
+        background-size: 600px;
+      }
     </mj-style>
   </mj-head>
-  <mj-body background-color="#f2f2f2">
+
+
+  <mj-body background-color="#fff">
     <mj-include path="./components/header.mjml" />
 
     <mj-raw>
       <!-- Top Section -->
     </mj-raw>
-    <mj-section background-color="#fff">
+    <mj-section>
       <mj-column padding="20px 0 30px 0">
         <mj-text css-class="header-title" font-size="58px" color="#004c3f" font-weight="bold">What's New</mj-text>
         <mj-text font-size="18px" font-weight="normal">July 18, 2028</mj-text>
@@ -57,16 +101,16 @@
     </mj-section>
 
     <mj-raw>
-      <!-- 2 Column Image With Text -->
+      <!-- 3 Line Divider -->
     </mj-raw>
     <mj-include path="./components/3-line.mjml" />
 
     <mj-raw>
-      <!-- Content Section -->
+      <!-- 2 Column Center Content Section -->
     </mj-raw>
-    <mj-section background-color="#fff">
+    <mj-section>
       <mj-column>
-        <mj-image href="https://shopify.com/blog" padding-bottom="20px" src="http://127.0.0.1:5500/assets/image.jpg" />
+        <mj-image href="https://shopify.com/blog" padding-bottom="20px" src="http://127.0.0.1:5500/assets/image.jpg" alt="Ordering Product on Phone" />
       </mj-column>
       <mj-column>
         <mj-text color="#004c3f" font-size="24px" font-weight="bold" padding-bottom="20px"><a class="link-color" href="https://shopify.com/blog">Find more ways to sell with pre-orders</a></mj-text>
@@ -76,10 +120,13 @@
     </mj-section>
 
     <mj-raw>
-      <!-- 2 Column Image With Text -->
+      <!-- 3 Line Divider -->
     </mj-raw>
     <mj-include path="./components/3-line.mjml" />
 
+    <mj-raw>
+      <!-- Bottom Section Text -->
+    </mj-raw>
     <mj-section padding="40px 40px 20px 40px">
       <mj-column>
         <mj-text align="center" font-size="20px" font-weight="bold" line-height="20px" color="#212b35">
@@ -89,7 +136,10 @@
       </mj-column>
     </mj-section>
 
-    <mj-section padding="0" background-color="#fff">
+    <mj-raw>
+      <!-- 2 App Icons -->
+    </mj-raw>
+    <mj-section padding="0">
       <mj-group>
         <mj-column padding="0">
           <mj-image padding="0 5px" align="right" href="https://shopify.com/blog/" src="http://127.0.0.1:5500/assets/appstore.png" width="150px" height="43px" />
