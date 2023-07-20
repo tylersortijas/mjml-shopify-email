@@ -80,7 +80,7 @@
       }
 
       .footer {
-        background-image: url('http://127.0.0.1:5500/assets/bg-colors.png');
+        background-image: url('./assets/bg-colors.png');
         background-size: 600px;
       }
     </mj-style>
@@ -110,7 +110,7 @@
     </mj-raw>
     <mj-section>
       <mj-column>
-        <mj-image href="https://shopify.com/blog" padding-bottom="20px" src="http://127.0.0.1:5500/assets/image.jpg" alt="Ordering Product on Phone" />
+        <mj-image href="https://shopify.com/blog" padding-bottom="20px" src="./assets/image.jpg" alt="Ordering Product on Phone" />
       </mj-column>
       <mj-column>
         <mj-text color="#004c3f" font-size="24px" font-weight="bold" padding-bottom="20px"><a class="link-color" href="https://shopify.com/blog">Find more ways to sell with pre-orders</a></mj-text>
@@ -142,10 +142,10 @@
     <mj-section padding="0">
       <mj-group>
         <mj-column padding="0">
-          <mj-image padding="0 5px" align="right" href="https://shopify.com/blog/" src="http://127.0.0.1:5500/assets/appstore.png" width="150px" height="43px" />
+          <mj-image padding="0 5px" align="right" href="https://shopify.com/blog/" src="./assets/appstore.png" width="150px" height="43px" />
         </mj-column>
         <mj-column padding="0">
-          <mj-image padding="0 5px" align="left" href="https://shopify.com/blog/" src="http://127.0.0.1:5500/assets/android.png" width="150px" height="43px" />
+          <mj-image padding="0 5px" align="left" href="https://shopify.com/blog/" src="./assets/android.png" width="150px" height="43px" />
         </mj-column>
       </mj-group>
     </mj-section>
