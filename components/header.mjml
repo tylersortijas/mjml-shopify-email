@@ -3,6 +3,6 @@
     </mj-raw>
     <mj-section css-class="header section-padding">
       <mj-column>
-        <mj-image target="_blank" alt="shopify logo" href="https://shopify.com/" width="121px" align="left" src="http://127.0.0.1:5500/assets/logo.png" />
+        <mj-image target="_blank" alt="shopify logo" href="https://shopify.com/" width="121px" align="left" src="./assets/logo.png" />
       </mj-column>
     </mj-section>
